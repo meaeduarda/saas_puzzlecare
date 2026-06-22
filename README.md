@@ -23,7 +23,8 @@ centralizar a gestão de clínicas multidisciplinares com foco em atendimento
 infantil, especialmente casos de Transtorno do Espectro Autista (TEA) e atrasos
 no desenvolvimento.
 
-O sistema foi criado a partir de uma necessidade real, substituindo processos manuais como planilhas, papéis e comunicação
+O sistema foi criado a partir de uma necessidade real de uma clínica em
+Recife/PE, substituindo processos manuais como planilhas, papéis e comunicação
 fragmentada por uma solução integrada para gestão de pacientes, equipe e
 acompanhamento terapêutico.
 
@@ -79,6 +80,38 @@ acompanhamento terapêutico.
 - Organização de regras de negócio para ambiente clínico
 - Estruturação de sistema com perfis de acesso (RBAC básico)
 - Manipulação de uploads e validação de arquivos
+
+---
+
+## 🗺️ Próximos Passos
+
+### Migração para Banco de Dados Relacional
+Atualmente o sistema utiliza armazenamento em arquivos JSON, o que atende bem ao
+escopo inicial. Para garantir performance, concorrência e escalabilidade em
+produção, o próximo passo é migrar para um banco de dados relacional:
+
+- **MariaDB** — Compatibilidade com MySQL, amplamente suportado em hospedagens
+  compartilhadas, ideal para manter custos reduzidos
+- **PostgreSQL** — Mais robusto para consultas complexas, suporte a JSONB
+  (transição gradual), ideal se houver crescimento de volume de dados
+
+A migração incluirá a reestruturação do modelo de dados com schemas
+normalizados, índices estratégicos e migrações versionadas.
+
+### Melhorias Planejadas
+
+- **API REST** — Separação do backend em camada de API para consumo pelo
+  frontend e futuros aplicativos mobile
+- **Painel de Indicadores (Dashboard Analytics)** — Métricas de atendimentos
+  mensais, taxa de absenteísmo, evolução por paciente
+- **Versão Mobile (PWA)** — Aplicação progressiva para acompanhamento por
+  profissionais em campo
+- **Integração com WhatsApp Business API** — Notificações e lembretes
+  automatizados para responsáveis
+- **Suporte a Múltiplas Clínicas (Tenant Multi-empresa)** — Isolamento de dados
+  por tenant viabilizando o modelo SaaS para diferentes unidades
+- **Cache com Redis** — Para sessões e consultas frequentes, reduzindo carga no
+  banco de dados
 
 ---
 
