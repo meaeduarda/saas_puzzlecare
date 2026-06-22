@@ -8,6 +8,10 @@
 
 ---
 
+![PuzzleCare](https://raw.githubusercontent.com/meaeduarda/saas_puzzlecare/main/saas_puzzlecare.png)
+
+---
+
 ## 📋 Sobre o Projeto
 
 O **PuzzleCare** é um sistema SaaS completo para gestão de clínicas
@@ -46,8 +50,6 @@ unificada que integra clientes, profissionais e gestão clínica.
 - Sessões gerenciadas por sessão PHP
 - Backup automático de dados
 
----
-
 ## 🛠 Stack Tecnológica
 
 | Tecnologia | Versão | Função |
@@ -59,6 +61,7 @@ unificada que integra clientes, profissionais e gestão clínica.
 | **PHPMailer** | — | Envio de e-mails transacionais |
 | **Dompdf** | — | Geração de PDFs |
 
+---
 
 ## 📌 Aprendizados
 
@@ -69,6 +72,5 @@ unificada que integra clientes, profissionais e gestão clínica.
 - Gerenciamento de sessão e controle de acesso por perfil
 - Manipulação de uploads e anexos com validação de tipos/tamanho
 
----
 
 > 📫 Para mais informações sobre o projeto, entre em contato.
