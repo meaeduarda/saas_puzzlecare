@@ -23,8 +23,7 @@ centralizar a gestão de clínicas multidisciplinares com foco em atendimento
 infantil, especialmente casos de Transtorno do Espectro Autista (TEA) e atrasos
 no desenvolvimento.
 
-O sistema foi criado a partir de uma necessidade real de uma clínica em
-Recife/PE, substituindo processos manuais como planilhas, papéis e comunicação
+O sistema foi criado a partir de uma necessidade real, substituindo processos manuais como planilhas, papéis e comunicação
 fragmentada por uma solução integrada para gestão de pacientes, equipe e
 acompanhamento terapêutico.
 
