@@ -89,10 +89,8 @@ Atualmente o sistema utiliza armazenamento em arquivos JSON, o que atende bem ao
 escopo inicial. Para garantir performance, concorrência e escalabilidade em
 produção, o próximo passo é migrar para um banco de dados relacional:
 
-- **MariaDB** — Compatibilidade com MySQL, amplamente suportado em hospedagens
-  compartilhadas, ideal para manter custos reduzidos
-- **PostgreSQL** — Mais robusto para consultas complexas, suporte a JSONB
-  (transição gradual), ideal se houver crescimento de volume de dados
+- **MariaDB** 
+- **PostgreSQL** 
 
 A migração incluirá a reestruturação do modelo de dados com schemas
 normalizados, índices estratégicos e migrações versionadas.
