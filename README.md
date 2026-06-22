@@ -1,10 +1,14 @@
-# 🧩 PuzzleCare — SaaS de Gestão para Clínicas Multidisciplinares
+# 🧩 PuzzleCare — Plataforma SaaS para Gestão de Clínicas Multidisciplinares
 
-> **⚠️ Aviso**
+> **⚠️ Projeto pessoal / freelancer**
 >
-> Este repositório contém **apenas a documentação pública** do projeto.
-> O código-fonte completo está armazenado em repositório privado na organização
-> da empresa. Esta página existe para fins de portfólio e referência.
+> O PuzzleCare é um projeto desenvolvido por mim como parte das atividades da
+> Cronos Solutions Tech, uma agência pessoal independente na qual participo em
+> horários não comerciais.
+>
+> Este repositório contém **apenas a documentação pública** do sistema.
+> O código-fonte completo está em repositório privado da organização freelancer,
+> utilizado para fins de portfólio e demonstração técnica.
 
 ---
 
@@ -14,13 +18,15 @@
 
 ## 📋 Sobre o Projeto
 
-O **PuzzleCare** é um sistema SaaS completo para gestão de clínicas
-multidisciplinares especializadas no atendimento infantil, com foco em crianças
-com Transtorno do Espectro Autista (TEA) e atrasos no desenvolvimento.
+O **PuzzleCare** é uma plataforma SaaS desenvolvida para digitalizar e
+centralizar a gestão de clínicas multidisciplinares com foco em atendimento
+infantil, especialmente casos de Transtorno do Espectro Autista (TEA) e atrasos
+no desenvolvimento.
 
-O sistema foi desenvolvido para atender uma clínica real em Recife/PE,
-substituindo processos manuais (planilhas, papéis, WhatsApp) por uma plataforma
-unificada que integra clientes, profissionais e gestão clínica.
+O sistema foi criado a partir de uma necessidade real de uma clínica em
+Recife/PE, substituindo processos manuais como planilhas, papéis e comunicação
+fragmentada por uma solução integrada para gestão de pacientes, equipe e
+acompanhamento terapêutico.
 
 ---
 
@@ -28,49 +34,58 @@ unificada que integra clientes, profissionais e gestão clínica.
 
 ### 👤 Portal do Cliente
 - Cadastro com verificação por e-mail (token)
-- Autenticação com fator duplo (2FA) via número de contato
+- Autenticação com verificação em duas etapas (2FA)
 - Agendamento de visitas com geração de protocolo
 - Acompanhamento de planos terapêuticos em PDF
-- Painel personalizado com timeline
+- Painel personalizado com histórico e timeline de atividades
 
 ### 🏥 Painel Administrativo
-- **Pacientes** — Cadastro completo, fotos, evoluções clínicas
-- **Grade Terapêutica** — Alocação de pacientes por sala/profissional
-- **Pré-cadastro Clínico** — Formulário multi-etapas (identificação, queixa,
-  antecedentes, desenvolvimento, observação clínica)
-- **Evoluções** — Registro diário com anexos (fotos, PDFs) e histórico
-- **Agenda** — Integração com Google Calendar
-- **Visitas** — Controle de agendamentos com confirmação
-- **Colaboradores** — Cadastro de profissionais com perfis de acesso
+- **Gestão de Pacientes** — cadastro completo, fotos e evolução clínica
+- **Grade Terapêutica** — organização de pacientes por sala e profissional
+- **Pré-cadastro Clínico** — formulário multi-etapas (identificação, queixa,
+  histórico e desenvolvimento)
+- **Evoluções Clínicas** — registros diários com anexos (imagens e PDFs)
+- **Agenda Integrada** — sincronização com Google Calendar
+- **Controle de Visitas** — agendamento e confirmação de atendimento
+- **Gestão de Colaboradores** — perfis com níveis de acesso
 
 ### 🔐 Segurança
-- Autenticação com senhas hasheadas (bcrypt)
-- Verificação em duas etapas (2FA)
+- Hash de senhas com bcrypt
+- Autenticação com verificação em duas etapas (2FA)
 - Tokens de verificação por e-mail
-- Sessões gerenciadas por sessão PHP
-- Backup automático de dados
+- Controle de sessão via PHP
+- Estrutura com backups automáticos de dados
+
+---
 
 ## 🛠 Stack Tecnológica
 
 | Tecnologia | Versão | Função |
 |---|---|---|
-| **PHP** | 8.3 | Backend / Lógica de negócio |
+| **PHP** | 8.3 | Backend e lógica de negócio |
 | **Apache** | 2.4 | Servidor web |
 | **HTML5 / CSS3 / JavaScript** | — | Frontend |
-| **JSON** | — | Armazenamento de dados (estrutura baseada em arquivos) |
+| **JSON** | — | Persistência de dados estruturados |
 | **PHPMailer** | — | Envio de e-mails transacionais |
-| **Dompdf** | — | Geração de PDFs |
+| **Dompdf** | — | Geração de PDFs clínicos |
 
 ---
 
 ## 📌 Aprendizados
 
-- Arquitetura de software para SaaS com foco em clínicas de saúde
-- Implementação de autenticação com verificação em duas etapas
-- Geração dinâmica de PDFs com dados clínicos
-- Integração com APIs de e-mail (SMTP) e WhatsApp
-- Gerenciamento de sessão e controle de acesso por perfil
-- Manipulação de uploads e anexos com validação de tipos/tamanho
+- Desenvolvimento de sistema SaaS com arquitetura modular
+- Autenticação com 2FA e segurança de sessão
+- Geração dinâmica de documentos (PDFs clínicos)
+- Integração com serviços externos (SMTP e Google Calendar)
+- Organização de regras de negócio para ambiente clínico
+- Estruturação de sistema com perfis de acesso (RBAC básico)
+- Manipulação de uploads e validação de arquivos
 
+---
 
-> 📫 Para mais informações sobre o projeto, entre em contato.
+## 📫 Sobre este projeto
+
+Este projeto faz parte do meu portfólio pessoal como desenvolvedora,
+representando experiências práticas com sistemas reais, foco em resolução de
+problemas e aplicação de conceitos de engenharia de software em cenários
+próximos ao mercado.
